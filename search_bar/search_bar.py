@@ -20,6 +20,7 @@ def get_closest_bar(data, longitude, latitude):
 
 #Полный путь к файлу.
 file_path = './bars.json'
+final_data = load_data(filepath)
 
 '''
 #Данная часть кода предназначена для возможности использования другой БД, имеющей схожу структуру.
