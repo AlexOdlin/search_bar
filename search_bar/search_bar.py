@@ -19,7 +19,7 @@ def get_closest_bar(data, longitude, latitude):
     return (final_name)
 
 #Полный путь к файлу.
-filepath = 'search_bar/search_bar/bars.json'
+filepath = 'search_bar/bars.json'
 final_data = load_data(filepath)
 
 '''
