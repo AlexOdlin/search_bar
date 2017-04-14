@@ -2,4 +2,4 @@ language: python
 python:
   - "3.5"
   
-script: python search_bar.py
+script: python search_bar/search_bar.py
