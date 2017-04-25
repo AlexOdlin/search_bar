@@ -1,5 +1,6 @@
 import json
 import math
+import pytest 
 
 # Функция открытия фйала для чтения. В нашем случае БД баров.
 def load_data(filepath):
@@ -18,9 +19,15 @@ def get_closest_bar(data, longitude, latitude):
             final_name = elements["Cells"]["Name"]
     return (final_name)
 
+# Тестирование введенных данных 
+def test_coordinats():
+    assert latitude != ''
+    assert  longitude != ''
+
 #Полный путь к файлу.
 filepath = 'search_bar/bars.json'
 final_data = load_data(filepath)
+test_coordinats()
 
 '''
 #Данная часть кода предназначена для возможности использования другой БД, имеющей схожу структуру.
